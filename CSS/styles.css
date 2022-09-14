@@ -6,7 +6,7 @@
 
 .b-background-i {
   background-repeat: no-repeat;
-  background-image: url(./images/LeMorsels-background.jpg);
+  background-image: url(../images/LeMorsels-background.jpg);
   background-size: cover;
   height: auto;
 }
@@ -17,6 +17,8 @@
 }
 
 .menu-icon {
+  padding-top: 30px;
+  padding-left: 30px;
   width: 20vh;
 }
 
@@ -50,7 +52,7 @@
   font-size: 50px;
   font-weight: 600;
   width: 80%;
-  background-image: url(./images/Le-slogan-gradient.jpg);
+  background-image: url(../images/Le-slogan-gradient.jpg);
   background-size: cover;
   background-clip: text;
   background-position-y: bottom;
@@ -96,12 +98,12 @@
 }
 
 .main-program {
-  background-image: url(./images/pattern_bg.png);
+  background-image: url(../images/pattern_bg.png);
   background-repeat: repeat;
   background-color: rgb(39, 42, 50);
 }
 
-.top-part-main {
+.main-center {
   justify-content: center;
   align-items: center;
 }
@@ -121,6 +123,10 @@
   height: 1px;
   background-color: #ec5242;
   margin: 8px auto;
+}
+
+.moreline {
+  width: 50%;
 }
 
 .card {
@@ -162,8 +168,7 @@
 }
 
 .align-buttons {
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-inline: 20%;
 }
 
 .mobile-join {
@@ -185,6 +190,72 @@
 
 .mobile-join:active {
   background-color: #c13728;
+  transform: translateY(4px);
+}
+
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 5px;
+}
+
+.t-speak-section {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #272a31;
+  margin: 15px;
+}
+
+.sponsors {
+  background-color: #2E2E2E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 0 30px 0;
+}
+
+.spon-t {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  padding: 3px;
+  color: #fff;
+}
+
+.supports-logo {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  width: 90%;
+}
+
+.sf-icons {
+  filter: grayscale(95%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 100px;
+}
+
+.Important-mark {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
 }
 
 
@@ -200,7 +271,7 @@
 
   .b-background-i {
     background-repeat: no-repeat;
-    background-image: url(./images/LeMorsels-background.jpg);
+    background-image: url(../images/LeMorsels-background.jpg);
     background-size: cover;
     height: auto;
   }
@@ -243,7 +314,7 @@
   }
 
   h5 a {
-    color: rgb(255, 255, 255);
+    color: #d3d3d3;
   }
 
   .le-logo {
@@ -304,6 +375,11 @@
     color: #ec5242;
   }
 
+  .below-slogan {
+    width: 47%;
+    gap: 10px;
+  }
+
   .cards-vessel {
     display: flex;
     gap: 3px;
@@ -330,16 +406,26 @@
   }
 
   .align-buttons {
-    margin-left: 420px;
-    margin-right: 100px;
+    padding-inline: 40%;
   }
 
   .desktop-sight {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+    padding: 50px 0;
     display: block;
     color: #fff;
-    font-family: 'Lato', sans-serif;
-    padding: 50px;
-    text-decoration: underline;
+  }
+
+  .supports-logo {
+    justify-content: space-between;
+    gap: 25px;
+    width: 50%;
+  }
+
+  .sf-icons {
+    width: 50px;
   }
 
 }
