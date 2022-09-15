@@ -12,14 +12,82 @@
 }
 
 .isHidden {
-  display: none;
-  visibility: hidden;
+  display: none !important;
 }
 
 .menu-icon {
+  display: block;
+  cursor: pointer;
   padding-top: 30px;
   padding-left: 30px;
   width: 20vh;
+}
+
+.menus-bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* mobile-menu-list */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+}
+
+.mobile-minus {
+  position: fixed;
+  left: 0;
+  right: 100%;
+  top: 0;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.786);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-list li {
+  width: 95%;
+  padding: 25px;
+  border-top: 1px solid #3c3f46;
+}
+
+.link-nav {
+  transition: 0.7s ease;
+  color: white;
+  margin: 16px 0;
+  font-size: 1.5em;
+}
+
+.link-nav:hover {
+  color: #ec5242;
 }
 
 .headline-container {
@@ -47,7 +115,6 @@
 
 .Le-Slogan {
   font-family: 'COCOGOOSE', sans-serif;
-  
   line-height: 55px;
   color: transparent;
   font-size: 50px;
@@ -169,6 +236,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
   gap: 15px;
   width: 100%;
 }
@@ -207,6 +275,16 @@
   width: 80%;
   height: 200px;
   color: #fff;
+}
+
+.research-1:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.research-2:hover {
+  cursor: pointer;
+  box-shadow: none;
 }
 
 .sponsors {
@@ -276,7 +354,8 @@ footer {
   }
 
   .menu-icon,
-  .mobile-join {
+  .mobile-join,
+  .catch-phrase {
     display: none;
   }
 
@@ -374,6 +453,14 @@ footer {
     color: #ec5242;
   }
 
+  .Le-title {
+    margin-inline: 10%;
+  }
+
+  .below-slogan {
+    padding-inline: 20%;
+  }
+
   .memorable-logo {
     max-width: 55%;
     margin: 0 auto;
@@ -389,7 +476,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 15px;
-    padding: 15px 100px;
+    padding: 15px 175px;
   }
 
   .supports-logo {

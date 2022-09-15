@@ -12,14 +12,82 @@
 }
 
 .isHidden {
-  display: none;
-  visibility: hidden;
+  display: none !important;
 }
 
 .menu-icon {
+  display: block;
+  cursor: pointer;
   padding-top: 30px;
   padding-left: 30px;
   width: 20vh;
+}
+
+.menus-bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* mobile-menu-list */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+}
+
+.mobile-minus {
+  position: fixed;
+  left: 0;
+  right: 100;
+  top: 0;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.786);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: 0.8s;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-list li {
+  width: 95%;
+  padding: 25px;
+  border-top: 1px solid #3c3f46;
+}
+
+.link-nav {
+  transition: 0.7s ease;
+  color: white;
+  margin: 16px 0;
+  font-size: 1.5em;
+}
+
+.link-nav:hover {
+  color: #ec5242;
 }
 
 .headline-container {
@@ -122,10 +190,13 @@
   width: 10%;
   height: 1px;
   background-color: #ec5242;
-  margin: 8px auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-inline: auto;
 }
 
 .moreline {
+  margin-top: 20px;
   width: 50%;
 }
 
@@ -156,7 +227,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   color: #ec5242;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .card-context {
@@ -164,7 +235,6 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgb(255, 255, 255);
-  text-align: justify;
 }
 
 .align-buttons {
@@ -185,11 +255,11 @@
 }
 
 .mobile-join:hover {
-  background-color: #ff422d;
+  background-color: #ff4a36;
 }
 
 .mobile-join:active {
-  background-color: #c13728;
+  background-color: #c83221;
   transform: translateY(4px);
 }
 
@@ -208,8 +278,66 @@
   margin: 15px;
 }
 
+.features-container {
+  font-family: 'Lato', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 5px;
+  padding: 0 12px;
+  display: flex;
+  gap: 20px;
+}
+
+.feature-card {
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.speaker-img {
+  height: 178px;
+  width: 177px;
+}
+
+.speaker-icontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 25px 0;
+}
+
+.feature-name {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #272a32;
+}
+
+.feature-profession {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: #ff4f38;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+hr {
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.feature-p {
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+}
+
 .sponsors {
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,7 +351,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   padding: 3px;
-  color: #fff;
+  color: #d3d3d3;
 }
 
 .supports-logo {
@@ -259,7 +387,6 @@ footer {
 }
 
 
-
 .desktop-menus,
 .top-menu,
 .le-logo,
@@ -288,7 +415,7 @@ footer {
   }
 
   .header {
-    background-color: rgb(62, 62, 62);
+    background-color: #3e3e3e;
   }
 
   .top-menu {
@@ -380,12 +507,27 @@ footer {
     gap: 10px;
   }
 
+  .underline {
+    width: 6%;
+    height: 1px;
+    background-color: #ec5242;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-inline: auto;
+  }
+
+  
+  .moreline {
+    margin-top: 20px;
+    width: 50%;
+  }
+
   .cards-vessel {
     display: flex;
     gap: 3px;
     padding: 20px 105px;
   }
-
+  
   .card {
     margin: 0;
     display: flex;
@@ -394,17 +536,38 @@ footer {
     align-items: center;
     gap: 10px;
   }
-
+  
   .card-t {
     font-size: 20px;
     margin-bottom: 2px;
   }
-
+  
   .card-context {
     text-align: center;
     line-height: 18px;
   }
+  
+  .features-container {
+    font-family: 'Lato', sans-serif;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
+  .feature-card {
+    width: 45%;
+    margin-bottom: 4%;
+    margin-inline: 15px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
   .align-buttons {
     padding-inline: 40%;
   }

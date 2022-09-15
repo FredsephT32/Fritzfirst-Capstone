@@ -2,7 +2,7 @@
 
 # LeMorsels
 
-> This is my final project of module 1 in Microverse, the approach was put in practice all the skills we got through our first module, such as Set up linters, Git and the Github Flow, Flexbox and Grid, HTML/CSS and JS best practices to recreate a webpage from scratch using visual content/guidelines.
+> This is my capstone project of module 1 in Microverse, the approach for this project is to put in practice all the skills we got through our first module, such as Set up linters, Git and the Github Flow, Flexbox and Grid, HTML/CSS and JS best practices to recreate a webpage from scratch using visual content/guidelines.
 
 ## Built With
 
@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://fredsepht32.github.io/Fritzfirst-Capstone/)
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ For educational purpose only, use it as a guideline.
 
 - GitHub: [@FredsephT32](https://github.com/FredsephT32)
 - Twitter: [@lil Fritz](https://twitter.com/Frederi70813362)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/frederick-torres-900b4a196/)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/frederick-torres-900b4a196/)
 
 ## 🤝 Contributing
 
@@ -60,7 +60,7 @@ Give a 👌 if you like this project!
 
 ## Acknowledgments
 
-- Special thanks to the autor of the original design Cindy Shin, The Microverse team and my Coding partners through this module.
+- Special thanks to the autor of the original design [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), The Microverse team and my Coding partners through this module.
 
 ## 📝 License
 
