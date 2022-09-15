@@ -14,6 +14,10 @@
 
 [Live Demo Link](https://fredsepht32.github.io/Fritzfirst-Capstone/)
 
+## Video Presentation
+
+[Capstone 1 video presentation](Capstone1-project.mp4)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -61,6 +65,13 @@ Give a 👌 if you like this project!
 ## Acknowledgments
 
 - Special thanks to the autor of the original design [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), The Microverse team and my Coding partners through this module.
+
+## Project Images
+
+![mobile-menu](images/mobile-menu.PNG)
+![main-information](images/Main-information.PNG)
+![about-page](images/about-image-logos.PNG)
+![Featured-speakers](images/Featured-Speakers.PNG)
 
 ## 📝 License
 
