@@ -54,7 +54,7 @@ const speakerCards = [
 
 function setSpeakerContainerChildren() {
   const SpeakerContainer = document.querySelector('section.features-container');
-  for (let i = 0; i < speakerCards.length; i += 1) {
+  for(let i = 0; i < speakerCards.length; i += 1) {
 
     // Create features parent (div)
     const feature = document.createElement('div');
@@ -94,7 +94,7 @@ function setSpeakerContainerChildren() {
     speakContent.appendChild(featurePrgph);
 
     SpeakerContainer.appendChild(feature);
- }
+  }
 }
 
 setSpeakerContainerChildren();
