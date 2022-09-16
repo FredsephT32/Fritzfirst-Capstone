@@ -1,0 +1,592 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.b-background-i {
+  background-repeat: no-repeat;
+  background-image: url(../images/LeMorsels-background.jpg);
+  background-size: cover;
+  height: auto;
+}
+
+.isHidden {
+  display: none !important;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  padding-top: 30px;
+  padding-left: 30px;
+  width: 20vh;
+}
+
+.menus-bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* mobile-menu-list */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+}
+
+.mobile-minus {
+  position: fixed;
+  left: 0;
+  right: 100%;
+  top: 0;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.786);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: 0.8s;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-list li {
+  width: 95%;
+  padding: 25px;
+  border-top: 1px solid #3c3f46;
+}
+
+.link-nav {
+  transition: 0.7s ease;
+  color: white;
+  margin: 16px 0;
+  font-size: 1.5em;
+}
+
+.link-nav:hover {
+  color: #ec5242;
+}
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 75px 0 25px 0;
+}
+
+.Le-title {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: left;
+  padding: 25px 25px 0 25px;
+}
+
+.catch-phrase {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  color: #ec5242;
+}
+
+.Le-Slogan {
+  font-family: 'COCOGOOSE', sans-serif;
+  line-height: 55px;
+  color: transparent;
+  font-size: 50px;
+  font-weight: 600;
+  width: 80%;
+  background-image: url(../images/Le-slogan-gradient.jpg);
+  background-size: cover;
+  background-position-y: bottom;
+  -webkit-background-clip: text;
+  margin-bottom: 7px;
+}
+
+.below-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 45px;
+}
+
+.Lemorse-quote {
+  margin: 17px 0.75em 0;
+  width: calc(100% - 2.5em);
+  padding: 1em 0.5em;
+  line-height: 150%;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  height: auto;
+  text-align: justify;
+  border: 4px solid rgb(255, 255, 255);
+  background-color: rgb(247, 247, 248);
+}
+
+.small-info {
+  width: calc(100% - 2.5em);
+  margin-bottom: 53px;
+}
+
+.lemorse-date {
+  padding: 20px 0 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #272a31;
+}
+
+.le-located {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+}
+
+.main-program {
+  background-image: url(../images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+}
+
+.main-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.main-t {
+  font-family: 'Lato', sans-serif;
+  color: rgb(255, 255, 255);
+  padding-top: 44px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+.underline {
+  width: 10%;
+  height: 1px;
+  background-color: #ec5242;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-inline: auto;
+}
+
+.moreline {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.card {
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.5s ease;
+  align-items: center;
+  padding: 16px 16px;
+  margin: 10px 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  border: 1px solid #fff;
+}
+
+.icon-size {
+  width: 60px;
+  height: 60px;
+  padding: 4px 4px;
+}
+
+.card-t {
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color: #ec5242;
+  font-size: 14px;
+}
+
+.card-context {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.align-buttons {
+  padding-inline: 20%;
+}
+
+.mobile-join {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 22px 50px;
+  border: none;
+  background-color: #ec5242;
+  color: #fff;
+  margin: 30px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.mobile-join:hover {
+  background-color: #ff4a36;
+}
+
+.mobile-join:active {
+  background-color: #c83221;
+  transform: translateY(4px);
+}
+
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 5px;
+}
+
+.t-speak-section {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #272a31;
+  margin: 15px;
+}
+
+.features-container {
+  font-family: 'Lato', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 5px;
+  padding: 0 12px;
+  display: flex;
+  gap: 20px;
+}
+
+.feature-card {
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.speaker-img {
+  height: 178px;
+  width: 177px;
+}
+
+.speaker-icontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 25px 0;
+}
+
+.feature-name {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #272a32;
+}
+
+.feature-profession {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: #ff4f38;
+  text-align: left;
+  font-weight: 600;
+}
+
+hr {
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.feature-p {
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+}
+
+.sponsors {
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 0 30px 0;
+}
+
+.spon-t {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  padding: 3px;
+  color: #d3d3d3;
+}
+
+.supports-logo {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  width: 90%;
+}
+
+.sf-icons {
+  filter: grayscale(95%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 100px;
+}
+
+.Important-mark {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+.desktop-menus,
+.top-menu,
+.le-logo,
+.desktop-sight {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .b-background-i {
+    background-repeat: no-repeat;
+    background-image: url(../images/LeMorsels-background.jpg);
+    background-size: cover;
+    height: auto;
+  }
+
+  .menu-icon,
+  .mobile-join {
+    display: none;
+  }
+
+  .desktop-menus,
+  .le-logo,
+  .desktop-sight {
+    display: block;
+  }
+
+  .header {
+    background-color: #3e3e3e;
+  }
+
+  .top-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    max-width: 87%;
+    margin: 0 auto;
+  }
+
+  .top-menu-actions {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    gap: 16px;
+    margin-left: 20px;
+    padding-right: 25px;
+  }
+
+  .top-menu-container {
+    display: flex;
+    align-items: center;
+  }
+
+  h5 a {
+    color: #d3d3d3;
+  }
+
+  .le-logo {
+    width: 50px;
+  }
+
+  .le-logo2 {
+    width: 20vh;
+  }
+
+  .menus-bar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .desktop-menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .desktop-nav-lnks {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menu-ul-lnks {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .menu-links {
+    text-decoration: none;
+    color: #888;
+    transition: 0.7s ease;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .menu-links:hover {
+    color: #ec5242;
+  }
+
+  .menu-button {
+    font-family: 'COCOGOOSE', sans-serif;
+    padding: 11px;
+    border: 5px solid #ec5242;
+    background-color: #fff;
+    color: #ec5242;
+  }
+
+  .below-slogan {
+    width: 47%;
+    gap: 10px;
+  }
+
+  .underline {
+    width: 6%;
+    height: 1px;
+    background-color: #ec5242;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-inline: auto;
+  }
+
+  .moreline {
+    margin-top: 20px;
+    width: 50%;
+  }
+
+  .cards-vessel {
+    display: flex;
+    gap: 3px;
+    padding: 20px 105px;
+  }
+
+  .card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card-t {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  .card-context {
+    text-align: center;
+    line-height: 18px;
+  }
+
+  .features-container {
+    font-family: 'Lato', sans-serif;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .feature-card {
+    width: 45%;
+    margin-bottom: 4%;
+    margin-inline: 15px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .align-buttons {
+    padding-inline: 40%;
+  }
+
+  .desktop-sight {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+    padding: 50px 0;
+    display: block;
+    color: #fff;
+  }
+
+  .supports-logo {
+    justify-content: space-between;
+    gap: 25px;
+    width: 50%;
+  }
+
+  .sf-icons {
+    width: 50px;
+  }
+}

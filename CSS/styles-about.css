@@ -1,0 +1,513 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.b-background-i {
+  background-repeat: no-repeat;
+  background-image: url(../images/LeMorsels-background.jpg);
+  background-size: cover;
+  height: auto;
+}
+
+.isHidden {
+  display: none !important;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  padding-top: 30px;
+  padding-left: 30px;
+  width: 20vh;
+}
+
+.menus-bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* mobile-menu-list */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+}
+
+.mobile-minus {
+  position: fixed;
+  left: 0;
+  right: 100%;
+  top: 0;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.786);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-list li {
+  width: 95%;
+  padding: 25px;
+  border-top: 1px solid #3c3f46;
+}
+
+.link-nav {
+  transition: 0.7s ease;
+  color: white;
+  margin: 16px 0;
+  font-size: 1.5em;
+}
+
+.link-nav:hover {
+  color: #ec5242;
+}
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 75px 0 25px 0;
+}
+
+.Le-title {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: center;
+  padding: 25px 25px 0 25px;
+}
+
+.catch-phrase {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  color: #ec5242;
+}
+
+.Le-Slogan {
+  font-family: 'COCOGOOSE', sans-serif;
+  line-height: 55px;
+  color: transparent;
+  font-size: 50px;
+  font-weight: 600;
+  width: 100%;
+  background-image: url(../images/Le-slogan-gradient.jpg);
+  background-size: cover;
+  background-position-y: bottom;
+  -webkit-background-clip: text;
+  margin-bottom: 7px;
+}
+
+.below-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 45px;
+}
+
+.Lemorse-quote {
+  height: auto;
+  font-size: 13px;
+  line-height: 150%;
+  padding: 1em 0.5em;
+  text-align: justify;
+  margin: 17px 0.75em 0;
+  width: calc(100% - 2.5em);
+  font-family: 'Lato', sans-serif;
+  border: 4px solid rgb(247, 247, 248);
+  background-color: rgb(255, 255, 255);
+}
+
+.small-info {
+  width: calc(100% - 2.5em);
+  margin-bottom: 53px;
+}
+
+.lemorse-mssg {
+  padding: 40px 40px 10px 40px;
+  font: 400 15px 'Lato', sans-serif;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  line-height: 22px;
+  width: 90%;
+}
+
+.cntc-email {
+  font: 700 14px 'Lato', sans-serif;
+  color: rgb(51, 51, 51);
+  text-decoration: underline;
+}
+
+.underline {
+  width: 10%;
+  height: 1px;
+  background-color: #ec5242;
+  margin: 8px auto;
+}
+
+.moreline {
+  width: 50%;
+}
+
+.memorable-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e4e4e4;
+  padding: 51px 25px 0 25px;
+}
+
+.memorable-logo-tt {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+}
+
+.competition-logo {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.big-logo {
+  width: 75%;
+  height: 20%;
+  margin: 55px;
+  border: 1px solid #e4e4e4;
+}
+
+.previous-Researches {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: 20px;
+  gap: 40px;
+}
+
+.previous-Researches h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.previous-Researches p {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.research-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 15px;
+  width: 100%;
+}
+
+.research-date {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.research-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-image: url(../images/research-img-R1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: inset 0 0 0 100px rgb(239 81 60 / 67%);
+  width: 80%;
+  height: 200px;
+  color: #fff;
+}
+
+.research-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-image: url(../images/research-img-R2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: inset 0 0 0 100px rgb(239 81 60 / 67%);
+  width: 80%;
+  height: 200px;
+  color: #fff;
+}
+
+.research-1:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.research-2:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.sponsors {
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 0 30px 0;
+}
+
+.spon-t {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  padding: 3px;
+  color: #fff;
+}
+
+.supports-logo {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  width: 90%;
+}
+
+.sf-icons {
+  filter: grayscale(95%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 100px;
+}
+
+.Important-mark {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+.desktop-menus,
+.top-menu,
+.le-logo,
+.desktop-sight,
+.dark-footer-logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .b-background-i {
+    background-repeat: no-repeat;
+    background-image: url(../images/LeMorsels-background.jpg);
+    background-size: cover;
+    height: auto;
+  }
+
+  .menu-icon,
+  .mobile-join,
+  .catch-phrase,
+  .sponsors,
+  .footer-logo {
+    display: none;
+  }
+
+  .desktop-menus,
+  .le-logo,
+  .desktop-sight,
+  .dark-footer-logo {
+    display: block;
+  }
+
+  .header {
+    background-color: rgb(62, 62, 62);
+  }
+
+  .top-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    max-width: 87%;
+    margin: 0 auto;
+  }
+
+  .top-menu-actions {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    gap: 16px;
+    margin-left: 20px;
+    padding-right: 25px;
+  }
+
+  .top-menu-container {
+    display: flex;
+    align-items: center;
+  }
+
+  h5 a {
+    color: #d3d3d3;
+  }
+
+  .le-logo {
+    width: 50px;
+  }
+
+  .le-logo2 {
+    width: 20vh;
+  }
+
+  .menus-bar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .desktop-menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .desktop-nav-lnks {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menu-ul-lnks {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .menu-links {
+    text-decoration: none;
+    color: #888;
+    transition: 0.7s ease;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .menu-links:hover {
+    color: #ec5242;
+  }
+
+  .menu-button {
+    font-family: 'COCOGOOSE', sans-serif;
+    padding: 11px;
+    border: 5px solid #ec5242;
+    background-color: #fff;
+    color: #ec5242;
+  }
+
+  .Le-title {
+    margin-inline: 10%;
+  }
+
+  .below-slogan {
+    padding-inline: 20%;
+  }
+
+  .memorable-logo {
+    max-width: 55%;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .big-logo {
+    width: 55%;
+  }
+
+  .research-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 175px;
+  }
+
+  .supports-logo {
+    justify-content: space-between;
+    gap: 25px;
+    width: 50%;
+  }
+
+  .desktop-change-color {
+    background-color: #2e2e2e;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .Important-mark {
+    color: rgba(255, 255, 255, 0.816);
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+  }
+
+  .dark-footer-logo {
+    width: 200px;
+    height: 100px;
+  }
+
+  .sf-icons {
+    width: 50px;
+  }
+}
