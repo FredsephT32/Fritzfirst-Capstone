@@ -56,46 +56,45 @@ function setSpeakerContainerChildren() {
   const SpeakerContainer = document.querySelector('section.features-container');
   for (let i = 0; i < speakerCards.length; i += 1) {
 
-  // Create features parent (div)
-  const feature = document.createElement('div');
-  feature.classList.add('feature-card');
+    // Create features parent (div)
+    const feature = document.createElement('div');
+    feature.classList.add('feature-card');
 
-  // Create feature Picture (img)
-  const featureImg = document.createElement('img');
-  featureImg.classList.add('speaker-img');
-  featureImg.src = speakerCards[i].speakerPicture;
-  feature.appendChild(featureImg);
+    // Create feature Picture (img)
+    const featureImg = document.createElement('img');
+    featureImg.classList.add('speaker-img');
+    featureImg.src = speakerCards[i].speakerPicture;
+    feature.appendChild(featureImg);
 
-  // Create Speaker content (div)
-  const speakContent = document.createElement('div');
-  speakContent.classList.add('speaker-icontent');
-  feature.appendChild(speakContent);
+    // Create Speaker content (div)
+    const speakContent = document.createElement('div');
+    speakContent.classList.add('speaker-icontent');
+    feature.appendChild(speakContent);
 
-  // Create feature Name (h3)
-  const featureName = document.createElement('h3');
-  featureName.classList.add('feature-name');
-  featureName.textContent = speakerCards[i].speakName;
-  speakContent.appendChild(featureName);
+    // Create feature Name (h3)
+    const featureName = document.createElement('h3');
+    featureName.classList.add('feature-name');
+    featureName.textContent = speakerCards[i].speakName;
+    speakContent.appendChild(featureName);
 
-  // Create feature Subtitle (h5)
-  const featureProf = document.createElement('h5');
-  featureProf.classList.add('feature-profession');
-  featureProf.textContent = speakerCards[i].featureSubTitle;
-  speakContent.appendChild(featureProf);
+    // Create feature Subtitle (h5)
+    const featureProf = document.createElement('h5');
+    featureProf.classList.add('feature-profession');
+    featureProf.textContent = speakerCards[i].featureSubTitle;
+    speakContent.appendChild(featureProf);
 
-  // Add hr separator to icontent (hr)
-  const hrSeparator = document.createElement('hr');
-  speakContent.appendChild(hrSeparator);
+    // Add hr separator to icontent (hr)
+    const hrSeparator = document.createElement('hr');
+    speakContent.appendChild(hrSeparator);
 
-  // Create feature paragraph (p)
-  const featurePrgph = document.createElement('p');
-  featurePrgph.classList.add('feature-p');
-  featurePrgph.textContent = speakerCards[i].featureParagraph;
-  speakContent.appendChild(featurePrgph);
+    // Create feature paragraph (p)
+    const featurePrgph = document.createElement('p');
+    featurePrgph.classList.add('feature-p');
+    featurePrgph.textContent = speakerCards[i].featureParagraph;
+    speakContent.appendChild(featurePrgph);
 
-  SpeakerContainer.appendChild(feature);
-    
-  }
+    SpeakerContainer.appendChild(feature);
+ }
 }
 
 setSpeakerContainerChildren();
