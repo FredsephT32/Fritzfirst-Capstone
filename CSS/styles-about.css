@@ -122,7 +122,6 @@ li {
   width: 100%;
   background-image: url(../images/Le-slogan-gradient.jpg);
   background-size: cover;
-  background-clip: text;
   background-position-y: bottom;
   -webkit-background-clip: text;
   margin-bottom: 7px;
@@ -345,7 +344,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-
   .b-background-i {
     background-repeat: no-repeat;
     background-image: url(../images/LeMorsels-background.jpg);

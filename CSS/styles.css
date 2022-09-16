@@ -52,7 +52,7 @@ li {
 .mobile-minus {
   position: fixed;
   left: 0;
-  right: 100;
+  right: 100%;
   top: 0;
   gap: 0;
   display: flex;
@@ -122,7 +122,6 @@ li {
   width: 80%;
   background-image: url(../images/Le-slogan-gradient.jpg);
   background-size: cover;
-  background-clip: text;
   background-position-y: bottom;
   -webkit-background-clip: text;
   margin-bottom: 7px;
@@ -202,7 +201,7 @@ li {
 
 .card {
   justify-content: space-between;
-  background: rgba(255,255,255,.1);
+  background: rgba(255, 255, 255, 0.1);
   transition: 0.5s ease;
   align-items: center;
   padding: 16px 16px;
@@ -320,7 +319,6 @@ li {
   font-size: 13px;
   color: #ff4f38;
   text-align: left;
-  font-size: 13px;
   font-weight: 600;
 }
 
@@ -386,7 +384,6 @@ footer {
   font-weight: 500;
 }
 
-
 .desktop-menus,
 .top-menu,
 .le-logo,
@@ -395,7 +392,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-
   .b-background-i {
     background-repeat: no-repeat;
     background-image: url(../images/LeMorsels-background.jpg);
@@ -516,7 +512,6 @@ footer {
     margin-inline: auto;
   }
 
-  
   .moreline {
     margin-top: 20px;
     width: 50%;
@@ -527,7 +522,7 @@ footer {
     gap: 3px;
     padding: 20px 105px;
   }
-  
+
   .card {
     margin: 0;
     display: flex;
@@ -536,17 +531,17 @@ footer {
     align-items: center;
     gap: 10px;
   }
-  
+
   .card-t {
     font-size: 20px;
     margin-bottom: 2px;
   }
-  
+
   .card-context {
     text-align: center;
     line-height: 18px;
   }
-  
+
   .features-container {
     font-family: 'Lato', sans-serif;
     flex-direction: row;
@@ -567,7 +562,7 @@ footer {
     align-items: center;
     gap: 40px;
   }
-  
+
   .align-buttons {
     padding-inline: 40%;
   }
@@ -590,5 +585,4 @@ footer {
   .sf-icons {
     width: 50px;
   }
-
 }
